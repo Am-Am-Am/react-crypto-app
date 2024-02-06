@@ -10,11 +10,11 @@ import AppContent from './components/layout/AppContent';
 export default function App() {
   return (
     <Layout>
-    <AppHeader/>
-    <Layout>
-      <AppSider/>
-      <AppContent/>
-    </Layout>
+      <AppHeader/>
+      <Layout>
+        <AppSider/>
+        <AppContent/>
+      </Layout>
   </Layout>
   )
 }
