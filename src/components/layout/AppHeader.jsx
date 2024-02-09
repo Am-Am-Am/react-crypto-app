@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react';
 import CoinInfoModal from '../CoinInfoModel';
 import AddAssetForm from '../AddAssetForm';
 
-  const handleChange = (value) => {
-    console.log(`selected ${value}`);
-  };
+  // const handleChange = (value) => {
+  //   console.log(`selected ${value}`);
+  // };
   
 const headerStyle = {
   width: '100%',
@@ -74,8 +74,8 @@ export default function AppHeader() {
      <CoinInfoModal coin={coin}/>
       </Modal>
 
-      <Drawer width={600} title="Add Asset" onClose={() => setDrawer(false)} open={drawer}>
-        <AddAssetForm/>
+      <Drawer width={600} title="Add Asset" onClose={() => setDrawer(false)} open={drawer} destroyOnClose>
+        <AddAssetForm OnClose ={() => setDrawer(false)}/>
       </Drawer>
 
   </Layout.Header>)
